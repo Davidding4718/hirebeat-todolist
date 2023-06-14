@@ -1,15 +1,25 @@
 import React from 'react';
 import './App.css';
-import LoginForm from './LoginForm';  // Assuming LoginForm.js is in the same directory
-import './amplify-config';  // Load the Amplify configuration
+import Home from './Home';
+import SignUp from './SignUp'; 
+import SignIn from './SignIn'; 
+import Template from './Template'; 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <LoginForm />
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/Template" element={<Template />} />
+          </Routes>
+        </header>
+      </div>
+    </Router>
   );
 }
 
