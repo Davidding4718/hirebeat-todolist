@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "basicapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-basicapp-staging-43036-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/8f6066d3c4948860438109d67af7fa371e447664"
+}

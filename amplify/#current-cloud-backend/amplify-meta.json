@@ -1,0 +1,82 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-basicapp-staging-43036-authRole",
+      "UnauthRoleArn": "arn:aws:iam::766863456740:role/amplify-basicapp-staging-43036-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::766863456740:role/amplify-basicapp-staging-43036-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-basicapp-staging-43036-deployment",
+      "UnauthRoleName": "amplify-basicapp-staging-43036-unauthRole",
+      "StackName": "amplify-basicapp-staging-43036",
+      "StackId": "arn:aws:cloudformation:us-east-1:766863456740:stack/amplify-basicapp-staging-43036/e0c81b00-08d9-11ee-8ca9-0e0527f064a5",
+      "AmplifyAppId": "d2x3rqvyjhvkt9"
+    }
+  },
+  "api": {
+    "basicapp": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        },
+        "GraphQLAPIIdOutput": "jl7b4ahlgrd4pd6peyj42nrpya",
+        "GraphQLAPIEndpointOutput": "https://xlpyeihmirdirc6sj5osgousry.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-2ewaqbey2vfzppgh3kh462hipy"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-06-16T01:46:08.311Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-basicapp-staging-43036-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apibasicapp"
+      }
+    }
+  },
+  "auth": {
+    "basicapp": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-basicapp-staging-43036-deployment/amplify-cfn-templates/auth/basicapp-cloudformation-template.json",
+        "logicalId": "authbasicapp"
+      },
+      "lastPushTimeStamp": "2023-06-16T01:46:08.602Z",
+      "output": {
+        "UserPoolId": "us-east-1_N90XkZYwX",
+        "AppClientIDWeb": "s063a7ama8jihsgi6uqsrk1hg",
+        "AppClientID": "2avu46p1vv44obok0rvnv4oknt",
+        "IdentityPoolId": "us-east-1:32f50427-fe85-450e-b237-6c08f1e22f61",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:766863456740:userpool/us-east-1_N90XkZYwX",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "basicapp"
+      },
+      "lastPushDirHash": "BrFG6+DXckIMF4YyDEz/YnmjlNw="
+    }
+  }
+}
