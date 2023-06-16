@@ -1,6 +1,7 @@
 import { Auth } from 'aws-amplify';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function SignIn() {
     const [username, setUsername] = useState("");
@@ -25,6 +26,9 @@ function SignIn() {
             <input placeholder="Password" type="password" onChange={event => setPassword(event.target.value)} />
             <button onClick={signIn}>Sign In</button>
             {error && <p>{error}</p>} {/* display the error message if there is one */}
+            <br/>
+            <br/>
+            <Link to="/signup">Create Account</Link>
         </div>
     );
 }

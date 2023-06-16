@@ -6,9 +6,9 @@ import { Amplify } from 'aws-amplify';
 import config from './aws-exports'; // Update this with your file path
 Amplify.configure(config);
 
-ReactDOM.render(
+const root = document.getElementById('root');
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

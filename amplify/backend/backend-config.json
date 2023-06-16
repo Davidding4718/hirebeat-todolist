@@ -1,6 +1,6 @@
 {
   "api": {
-    "hirebeattodolist": {
+    "basicapp": {
       "dependsOn": [],
       "output": {
         "authConfig": {
@@ -18,7 +18,7 @@
     }
   },
   "auth": {
-    "hirebeattodolist": {
+    "basicapp": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
